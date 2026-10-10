@@ -119,7 +119,12 @@ fun cancelActiveDownload(context: Context, fileName: String) {
 }
 
 suspend fun downloadAsset(context: Context, release: GithubRelease, asset: GithubAsset) {
-    val desiredName = sanitizeFileName("${release.tagName}_${asset.name}")
+    // 资产名可能已含版本前缀（如 v37_Turnip_Gen8_V37.zip），再拼 tagName 会重复
+    val rawName = asset.name
+    val desiredName = sanitizeFileName(
+        if (rawName.startsWith(release.tagName, ignoreCase = true)) rawName
+        else "${release.tagName}_$rawName"
+    )
     if (ensureFileNotExists(context, desiredName, "Drivers")) return
     val acceleratedUrl = Accelerator.rewriteUrl(asset.downloadUrl)
     downloadFileWithProgress(context.applicationContext, acceleratedUrl, desiredName, "Drivers")
