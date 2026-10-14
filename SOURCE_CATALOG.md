@@ -1,7 +1,7 @@
-# EmuHub remote source catalog
+# EmuBox remote source catalog
 
 `/sources.json` is a lightweight index. It does **not** mirror or host drivers.
-EmuHub reads the catalog, then fetches releases/components directly from the upstream URL configured for each source.
+EmuBox reads the catalog, then fetches releases/components directly from the upstream URL configured for each source.
 
 The default catalog URL is:
 
@@ -21,7 +21,7 @@ This means:
   "id": "example",
   "name": "Example",
   "apiUrl": "https://api.github.com/repos/owner/repo/releases",
-  "description": "Short description shown in EmuHub.",
+  "description": "Short description shown in EmuBox.",
   "experimental": true,
   "enabled": true,
   "supportedSeries": ["6xx", "7xx", "8xx"],
@@ -71,8 +71,8 @@ The component manifest must use the same array format already used by WinNative-
 }
 ```
 
-EmuHub discovers component types dynamically, so a new type in a compatible manifest can appear in the Download Hub without adding it to a hardcoded list first.
+EmuBox discovers component types dynamically, so a new type in a compatible manifest can appear in the Download Hub without adding it to a hardcoded list first.
 
 ## Custom catalog
 
-In **Settings > Sources**, paste any HTTP(S) catalog URL and press **Save**. Press **Default** to return to the EmuHub-managed catalog.
+In **Settings > Sources**, paste any HTTP(S) catalog URL and press **Save**. Press **Default** to return to the EmuBox-managed catalog.
