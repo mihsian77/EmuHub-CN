@@ -43,7 +43,7 @@
       "target_emulator": "generic",
       "package_format": "adpkg",
       "maturity": "stable",
-      "stars": 5136,
+      "stars": 5137,
       "description": "最权威的 Adrenotools 驱动仓库，Skyline/Strato/Vita3K/Yuzu 兼容",
       "notes": "长期维护，兼容性最好",
       "companion": [],
@@ -102,7 +102,7 @@
       "target_emulator": "generic",
       "package_format": "adpkg",
       "maturity": "stable",
-      "stars": 1015,
+      "stars": 1017,
       "description": "从 Mesa 源码自动构建 Turnip，同时提供高通官方驱动",
       "notes": "通用 turnip 源；最新 v891.7 为 Honor 固件提取的闭源 Qualcomm 驱动（A8xx），混有闭源包，安装前留意",
       "companion": [],
@@ -317,7 +317,7 @@
       "target_emulator": "generic",
       "package_format": "adpkg",
       "maturity": "ci",
-      "stars": 193,
+      "stars": 195,
       "description": "自动构建最新 Mesa Turnip，bleeding-edge",
       "notes": "CI 自动构建，最新但可能不稳定",
       "companion": [],
@@ -343,7 +343,7 @@
           "710-720-Test"
         ]
       },
-      "updated_at": "2026-10-16T02:01:15Z"
+      "updated_at": "2026-10-17T05:14:06Z"
     },
     {
       "id": "ilhan-athn7-ci",
@@ -393,7 +393,7 @@
       "target_emulator": "generic",
       "package_format": "magisk",
       "maturity": "stable",
-      "stars": 166,
+      "stars": 165,
       "description": "Turnip Magisk 模块 CI 构建",
       "notes": "Magisk 模块格式，需要 root",
       "companion": [],
@@ -453,7 +453,7 @@
       "target_emulator": "generic",
       "package_format": "adpkg",
       "maturity": "beta",
-      "stars": 470,
+      "stars": 471,
       "description": "Mainline/Stable Turnip 构建，广泛 Adreno 支持",
       "notes": "",
       "companion": [],
@@ -697,7 +697,7 @@
       "target_emulator": "generic",
       "package_format": "zip",
       "maturity": "alpha",
-      "stars": 4,
+      "stars": 5,
       "description": "A810 专用 Turnip，含 autotuner 自动调优版本",
       "notes": "有 autotuner 和 S2 两个版本",
       "companion": [],
@@ -729,7 +729,7 @@
       "target_emulator": "winlator",
       "package_format": "adpkg",
       "maturity": "stable",
-      "stars": 70,
+      "stars": 71,
       "description": "710/720/722 成熟 Turnip 构建，含 Winlator glibc 专用版",
       "notes": "710 用户首选",
       "companion": [],
@@ -794,7 +794,7 @@
       "target_emulator": "winlator",
       "package_format": "zip",
       "maturity": "beta",
-      "stars": 48,
+      "stars": 50,
       "description": "Mali-G57 PanVK 驱动，D3D11+DXVK 2.x 已可用，专为 Winlator 调优",
       "notes": "G57 用户首选，需配合 FristOneRR-Wrapper",
       "companion": [
@@ -922,7 +922,7 @@
       "target_emulator": "generic",
       "package_format": "zip",
       "maturity": "experimental",
-      "stars": 39,
+      "stars": 40,
       "description": "Mali-G720（天玑9300/9200+）CSF PanVK 实验驱动",
       "notes": "CSF 架构，native Vulkan",
       "companion": [],
@@ -955,7 +955,7 @@
       "target_emulator": "generic",
       "package_format": "so",
       "maturity": "beta",
-      "stars": 51,
+      "stars": 52,
       "description": "独立 Mesa PanVK 驱动，直接通过 Android mali_kbase 通信，持续更新",
       "notes": "提供 android 和 glibc 两个 .so，beta 活跃开发中",
       "companion": [],
@@ -965,7 +965,7 @@
           "panfrost"
         ]
       },
-      "updated_at": "2026-10-13T13:32:56Z"
+      "updated_at": "2026-10-16T13:22:06Z"
     },
     {
       "id": "martuniy-panvk",
@@ -1201,7 +1201,7 @@
       "target_emulator": "generic",
       "package_format": "adpkg",
       "maturity": "experimental",
-      "stars": 12,
+      "stars": 15,
       "description": "JimVulkan radv-xclipse：Mesa3D RADV 移植到三星 Xclipse GPU（活跃维护）",
       "notes": "v1.6.0 2026-10-13；替代原 Matheus-TestUser1 停更仓库",
       "companion": [],
@@ -1320,7 +1320,7 @@
       "target_emulator": "winlator",
       "package_format": "adpkg",
       "maturity": "experimental",
-      "stars": 227,
+      "stars": 229,
       "description": "基于 Mesa 26.3 的优化定制 Turnip，分 ULTIMATE 与 Universal 两版",
       "notes": "IR3 编译器优化 + 4GB 着色器缓存，塞尔达 TOTK/BOTW 花屏修复",
       "companion": [],
@@ -1470,7 +1470,7 @@
       "target_emulator": "generic",
       "package_format": "zip",
       "maturity": "beta",
-      "stars": 16,
+      "stars": 15,
       "description": "Mesa 26.3.0 PanVK 多 Mali 型号（G610/G615/G710/G715/G720）kbase/CSF 构建，G610 含 vkd3d/D3D12 修复",
       "notes": "wonderkast02 的 fork 扩展（multi-GPU）；实测 release 含 meta.json + libvulkan_panfrost.so 合规，活跃（2026-10-06）",
       "companion": [],
@@ -1500,7 +1500,7 @@
       "target_emulator": "generic",
       "package_format": "zip",
       "maturity": "experimental",
-      "stars": 25,
+      "stars": 26,
       "description": "骁龙 865 / Adreno 650 专用 Turnip（Mesa main bffd91947efc），Switch 模拟优化，社区 Z 构建",
       "notes": "对比 StevenMXZ R5 提升明显（Switch 模拟 5 款实测无崩溃）；仅 sysmem 无 GMEM；实测 zip 含 meta.json 合规，活跃（2026-10-11）",
       "companion": [],
@@ -1672,7 +1672,7 @@
       "target_emulator": "generic",
       "package_format": "zip",
       "maturity": "ci",
-      "stars": 21,
+      "stars": 22,
       "notes": "活跃（2026-10-14）；无 Release，APK/zip 从 Actions 产物获取",
       "companion": [
         "guna-winlatormali"
@@ -1680,7 +1680,7 @@
       "filters": {
         "default": []
       },
-      "updated_at": "2026-10-15T13:38:26Z"
+      "updated_at": "2026-10-16T19:46:16Z"
     },
     {
       "id": "ghaelv-turnip-lemon-ade",
@@ -1817,7 +1817,7 @@
       "target_emulator": "generic",
       "package_format": "apk",
       "maturity": "beta",
-      "stars": 448,
+      "stars": 452,
       "description": "WinlatorMali：Winlator Mali 分支（Wine + Box64 + PanVK Kbase，社区配置仓库同作者）",
       "notes": "与 Winlator-Mali-Community-Configs 配置仓库同源",
       "companion": [
